@@ -1,21 +1,21 @@
 # CountBench
 
-**TODO: Add description**
+## Run the benchmarks
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `count_bench` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:count_bench, "~> 0.1.0"}
-  ]
-end
+```
+mix bench
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/count_bench](https://hexdocs.pm/count_bench).
+## Run the tests
 
+```
+mix test
+```
+
+## Results
+
+![](https://p196.p4.n0.cdn.getcloudapp.com/items/DOuqwzee/2a367b04-f5f5-49b2-bf8a-69ff9a2bb34e.png?v=572f1c7cc88bc39ea410eca3b4d8f34f)
+
+## Acknowledgements
+
+* List of words from https://github.com/dwyl/english-words
