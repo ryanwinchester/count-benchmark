@@ -14,6 +14,10 @@ mix test
 
 ## Results
 
+[Here is the file comparison page](https://ryanwinchester.github.io/count-benchmark/dist/index_words_file_comparison.html).
+
+To see *all* the HTML generated from Benchee, [click here](https://ryanwinchester.github.io/count-benchmark/dist) instead.
+
 ```
 Operating System: macOS
 CPU Information: Intel(R) Core(TM) i5-9600K CPU @ 3.70GHz
