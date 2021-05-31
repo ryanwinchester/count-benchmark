@@ -16,6 +16,6 @@ Benchee.run(
   },
   formatters: [
     Benchee.Formatters.Console,
-    {Benchee.Formatters.HTML, file: "dist/index.html"},
+    {Benchee.Formatters.HTML, file: "bench_html/index.html"},
   ]
 )

@@ -24,3 +24,5 @@ count_bench-*.tar
 
 # Temporary files, for example, from tests.
 /tmp/
+
+/bench_html/
