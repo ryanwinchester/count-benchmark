@@ -9,10 +9,10 @@ file_contents =
 # Output to console and HTML.
 Benchee.run(
   %{
-    "cursed" => fn input -> CountBench.letters_cursed(input) end,
-    "comprehension" => fn input -> CountBench.letters_comprehension(input) end,
-    "regex" => fn input -> CountBench.letters_regex(input) end,
-    "recursive pattern-match" => fn input -> CountBench.letters_recursive(input) end,
+    "cursed" => &CountBench.letters_cursed/1,
+    "comprehension" => &CountBench.letters_comprehension/1,
+    "regex" => &CountBench.letters_regex/1,
+    "recursion" => &CountBench.letters_recursive/1,
   },
   inputs: %{
     "short-string" => "a b c d e f g 1 2 3 4 5 ! @ # $ % ^ & * ( )",
