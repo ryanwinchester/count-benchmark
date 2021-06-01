@@ -26,8 +26,8 @@ defmodule CountBench.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:benchee, "~> 1.0", only: :dev},
-      {:benchee_html, "~> 1.0", only: :dev},
+      {:benchee, "~> 1.0", only: [:dev], runtime: false},
+      {:benchee_html, "~> 1.0", only: [:dev], runtime: false},
       {:credo, "~> 1.5", only: [:dev], runtime: false},
       {:dialyxir, "~> 1.0", only: [:dev], runtime: false}
     ]
@@ -35,7 +35,8 @@ defmodule CountBench.MixProject do
 
   defp aliases do
     [
-      bench: ["run bench/run.exs"]
+      bench: ["bench.letters"],
+      "bench.letters": ["run bench/letters.exs"]
     ]
   end
 end
