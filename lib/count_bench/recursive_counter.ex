@@ -11,8 +11,11 @@ defmodule CountBench.RecursiveCounter do
 
   defp count_letters(<<>>, total), do: total
 
-  defp count_letters(<<c::utf8, rest::binary>>, total) when c in ?a..?z or c in ?A..?Z,
-    do: count_letters(rest, total + 1)
+  defp count_letters(<<c::utf8, rest::binary>>, total) when c in ?a..?z or c in ?A..?Z do
+    count_letters(rest, total + 1)
+  end
 
-  defp count_letters(<<_::utf8, rest::binary>>, total), do: count_letters(rest, total)
+  defp count_letters(<<_::utf8, rest::binary>>, total) do
+    count_letters(rest, total)
+  end
 end

@@ -26,3 +26,5 @@ count_bench-*.tar
 /tmp/
 
 /bench_html/
+
+/priv/plts/
