@@ -15,6 +15,7 @@ defmodule CountBench do
       7
 
   """
+  @spec letters_cursed(String.t()) :: non_neg_integer()
   defdelegate letters_cursed(str), to: CountBench.CursedCounter, as: :count_letters
 
   @doc """
@@ -29,6 +30,7 @@ defmodule CountBench do
       7
 
   """
+  @spec letters_comprehension(String.t()) :: non_neg_integer()
   defdelegate letters_comprehension(str), to: CountBench.ComprehensionCounter, as: :count_letters
 
   @doc """
@@ -43,6 +45,7 @@ defmodule CountBench do
       7
 
   """
+  @spec letters_regex(String.t()) :: non_neg_integer()
   defdelegate letters_regex(str), to: CountBench.RegexCounter, as: :count_letters
 
   @doc """
@@ -57,5 +60,6 @@ defmodule CountBench do
       7
 
   """
+  @spec letters_recursive(String.t()) :: non_neg_integer()
   defdelegate letters_recursive(str), to: CountBench.RecursiveCounter, as: :count_letters
 end

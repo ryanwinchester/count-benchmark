@@ -1,5 +1,7 @@
 # CountBench
 
+[![CI](https://github.com/ryanwinchester/count-benchmark/actions/workflows/ci.yaml/badge.svg)](https://github.com/ryanwinchester/count-benchmark/actions/workflows/ci.yaml)
+
 ## Run the benchmarks
 
 ```
